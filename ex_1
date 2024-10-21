@@ -1,0 +1,19 @@
+import pandas as pd
+
+houses = pd.read_csv(r"C:/Users/User/Desktop/House_Price_Prediction_Dataset.csv")
+
+X = houses.iloc[:, :-1].values
+Y = houses.iloc[:, 4].values
+
+print(houses.head())
+
+Output:    Id  Area  Bedrooms  Bathrooms  ...  Location  Condition Garage   Price
+0   1  1360         5          4  ...  Downtown  Excellent     No  149919
+1   2  4272         5          4  ...  Downtown  Excellent     No  424998
+2   3  3592         2          2  ...  Downtown       Good     No  266746
+3   4   966         4          2  ...  Suburban       Fair    Yes  244020
+4   5  4926         1          4  ...  Downtown       Fair    Yes  636056
+
+[5 rows x 10 columns]
+
+Process finished with exit code 0
